@@ -41,18 +41,17 @@ public class OmegaApp extends Application {
     static final double BALL = 20;
 
     //variables
-    int ballYSpeed = 1;
-    int ballXSpeed = 1;
+    int ballYSpeed, ballXSpeed = 1;
+    int radius;
     double xBallSpot = WIDTH / 2;
     double yBallSpot = HEIGHT / 2;
     DemoGame game;
     Canvas canvas;
-    double yPlayer1 = HEIGHT / 2;
-    double yPlayer2 = HEIGHT / 2;
+    double yPlayer1, yPlayer2 = HEIGHT / 2;
     Label notice;
     ImageView banner;
-    int player1Score = 0;
-    int player2Score = 0;
+    int player1Score, player2Score = 0;
+    Color color;
     Image bannerImage;
     boolean gameOn;
     int xPlayer1 = 0;
@@ -168,6 +167,25 @@ public class OmegaApp extends Application {
         }
     } // ballSpeed
 
+    /**
+     * retrieve color used for the board background.
+     *
+     * @return returns the reading of the color
+     */
+
+    private Color getColor() {
+        return color;
+    }
+
+    /**
+     * updating the value of the color.
+     *
+     * @param color selected from the Color class.
+     */
+
+    private void settingColor(Color color) {
+        this.color = color;
+    }
     /**
      * This method sets the ball position and aligns the position of the ball with
      * its current speed.
