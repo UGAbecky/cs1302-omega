@@ -30,15 +30,15 @@ import javafx.scene.paint.Color;
 public class OmegaApp extends Application {
 
     // constants for dimensions of the player bars
-    private static final int PLAYER_BARX = 20;
-    private static final int PLAYER_BARY = 75;
+    static final int PLAYER_BARX = 20;
+    static final int PLAYER_BARY = 75;
 
     //constants for the window dimensions
-    private static final int WIDTH = 1000;
-    private static final int HEIGHT = 600;
+    static final int WIDTH = 1000;
+    static final int HEIGHT = 600;
 
     //constant for the ball dimension
-    private static final double BALL = 20;
+    static final double BALL = 20;
 
     //variables
     int ballYSpeed = 1;
